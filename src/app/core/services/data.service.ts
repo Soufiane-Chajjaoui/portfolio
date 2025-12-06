@@ -14,12 +14,10 @@ export class DataService {
   constructor(private http: HttpClient, private platformLocation: PlatformLocation) { }
 
   private getAssetUrl(path: string): string {
-    const baseHref = this.platformLocation.getBaseHrefFromDOM();
-    // Remove leading slash from path if present to avoid double slashes with baseHref
-    const cleanPath = path.startsWith('/') ? path.substring(1) : path;
-    const fullUrl = `${baseHref}${cleanPath}`;
-    console.log(`Constructed asset URL: ${fullUrl} (baseHref: ${baseHref}, path: ${path})`);
-    return fullUrl;
+    // For root deployment (Vercel), we just need to ensure the path starts with /
+    const cleanPath = path.startsWith('/') ? path : `/${path}`;
+    console.log(`Constructed asset URL: ${cleanPath}`);
+    return cleanPath;
   }
 
   getProjects(): Observable<Project[]> {

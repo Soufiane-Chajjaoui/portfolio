@@ -3,7 +3,8 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
     {
         path: '',
-        loadComponent: () => import('./features/portfolio/portfolio-list.component').then(m => m.PortfolioListComponent)
+        loadComponent: () => import('./features/portfolio/portfolio-list.component').then(m => m.PortfolioListComponent),
+        pathMatch: 'full'
     },
     {
         path: 'about',
