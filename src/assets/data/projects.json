@@ -148,13 +148,13 @@
         "fr": [
           "Pipeline end-to-end : ingestion Apache Kafka, traitement Apache Spark batch/streaming",
           "Système de recommandation : recommandations personnalisées + Related Items",
-          "Orchestration ETL avec Apache Airflow, stockage PostgreSQL et Data Lake MinIO Apache Iceberg",
+          "Orchestration ETL avec Apache Airflow, stockage PostgreSQL et Lakehouse MinIO Apache Iceberg",
           "Déploiement, tests et monitoring sur environnement Dockerisé"
         ],
         "en": [
           "End-to-end pipeline: Apache Kafka ingestion, Apache Spark batch/streaming processing",
           "Recommendation system: personalized recommendations + Related Items",
-          "ETL orchestration with Apache Airflow, PostgreSQL storage and MinIO Apache Iceberg Data Lake",
+          "ETL orchestration with Apache Airflow, PostgreSQL storage and MinIO Apache Iceberg Lakehouse",
           "Deployment, testing and monitoring on Dockerized environment"
         ]
       },
@@ -202,6 +202,22 @@
       "media": [
         {
           "type": "image",
+          "src": "assets/images/mkadia/1.png",
+          "alt": {
+            "fr": "MKADIA App",
+            "en": "MKADIA App"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/mkadia/2.png",
+          "alt": {
+            "fr": "MKADIA App",
+            "en": "MKADIA App"
+          }
+        },
+        {
+          "type": "image",
           "src": "assets/images/mkadia/3.png",
           "alt": {
             "fr": "MKADIA App",
@@ -223,20 +239,25 @@
         "Spring Boot 3",
         "PostgreSQL",
         "Twilio",
+        "MinIO",
         "Docker",
         "JMeter",
         "Sublime Merge"
       ],
       "tasks": {
         "fr": [
-          "Application complète : gestion produits, utilisateurs, commandes, codes promo",
-          "Backend Spring Boot : JWT, Refresh Token, 2FA (Twilio), APIs REST",
-          "Tests de charge avec JMeter"
+          "Dashboard Admin (Angular) : Gestion produits, catégories, commandes, codes promo",
+          "Mobile : Navigation, favoris, panier, checkout (adresse, paiement), suivi de commandes",
+          "Performance : Chargement paresseux (lazy loading) des produits au scroll",
+          "Fonctionnalités : Gestion de profil utilisateur, Mot de passe oublié (token d'expiration)",
+          "Infrastructure : Stockage média MinIO (S3) et Backend Spring Boot (2FA, JWT)"
         ],
         "en": [
-          "Complete application: products, users, orders, promo codes management",
-          "Spring Boot backend: JWT, Refresh Token, 2FA (Twilio), REST APIs",
-          "Load testing with JMeter"
+          "Admin Dashboard (Angular): Products, categories, orders, promo codes management",
+          "Mobile: Browsing, favorites, cart, checkout (address, payment), order tracking",
+          "Performance: Lazy loading of products on scroll",
+          "Features: User profile management, Forgot password (expiration token)",
+          "Infrastructure: MinIO (S3) media storage and Spring Boot Backend (2FA, JWT)"
         ]
       },
       "links": {
