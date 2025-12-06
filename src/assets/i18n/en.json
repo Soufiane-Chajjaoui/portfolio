@@ -26,7 +26,13 @@
                 "location": "Agadir, Morocco",
                 "specialization": "AI & Big Data",
                 "description": "Specialization in Machine Learning, Deep Learning, and Big Data architectures.",
-                "courses": ["Machine Learning", "Deep Learning", "Big Data", "Data Engineering"]
+                "courses": [
+                    "Machine Learning",
+                    "Deep Learning",
+                    "Big Data",
+                    "Data Engineering"
+                ],
+                "grade": "In Progress"
             },
             {
                 "degree": "Professional Bachelor in IS and Networks Engineering",
@@ -35,7 +41,13 @@
                 "location": "Safi, Morocco",
                 "specialization": "Information Systems and Networks",
                 "description": "Web application development and information systems management.",
-                "courses": ["Java", "Spring Boot", "Angular", "Networks"]
+                "courses": [
+                    "Java",
+                    "Spring Boot",
+                    "Angular",
+                    "Networks"
+                ],
+                "grade": "High Honors"
             },
             {
                 "degree": "DUT in Computer Engineering",
@@ -44,7 +56,13 @@
                 "location": "Safi, Morocco",
                 "specialization": "Computer Engineering",
                 "description": "Fundamentals in programming, databases, and web development.",
-                "courses": ["Java", "Databases", "Algorithms", "Web Development"]
+                "courses": [
+                    "Java",
+                    "Databases",
+                    "Algorithms",
+                    "Web Development"
+                ],
+                "grade": "Honors"
             }
         ]
     },

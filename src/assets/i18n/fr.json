@@ -26,7 +26,13 @@
                 "location": "Agadir, Maroc",
                 "specialization": "IA & Big Data",
                 "description": "Spécialisation en Machine Learning, Deep Learning et architectures Big Data.",
-                "courses": ["Machine Learning", "Deep Learning", "Big Data", "Data Engineering"]
+                "courses": [
+                    "Machine Learning",
+                    "Deep Learning",
+                    "Big Data",
+                    "Data Engineering"
+                ],
+                "grade": "En cours"
             },
             {
                 "degree": "Licence Professionnelle Ingénierie des SI et Réseaux",
@@ -35,7 +41,13 @@
                 "location": "Safi, Maroc",
                 "specialization": "Systèmes d'Information et Réseaux",
                 "description": "Développement d'applications web et gestion des systèmes d'information.",
-                "courses": ["Java", "Spring Boot", "Angular", "Réseaux"]
+                "courses": [
+                    "Java",
+                    "Spring Boot",
+                    "Angular",
+                    "Réseaux"
+                ],
+                "grade": "Mention Très Bien"
             },
             {
                 "degree": "DUT Génie Informatique",
@@ -44,7 +56,13 @@
                 "location": "Safi, Maroc",
                 "specialization": "Génie Informatique",
                 "description": "Fondamentaux en programmation, bases de données et développement web.",
-                "courses": ["Java", "Bases de données", "Algorithmes", "Développement Web"]
+                "courses": [
+                    "Java",
+                    "Bases de données",
+                    "Algorithmes",
+                    "Développement Web"
+                ],
+                "grade": "Mention Bien"
             }
         ]
     },
