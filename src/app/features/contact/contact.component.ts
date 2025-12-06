@@ -3,10 +3,10 @@ import { TranslatePipe } from '../../shared/pipes/translate.pipe';
 import { FormsModule } from '@angular/forms';
 
 @Component({
-    selector: 'app-contact',
-    standalone: true,
-    imports: [TranslatePipe, FormsModule],
-    template: `
+  selector: 'app-contact',
+  standalone: true,
+  imports: [TranslatePipe, FormsModule],
+  template: `
     <div class="container mx-auto px-4 py-20 max-w-2xl text-center">
       <h1 class="text-4xl font-bold mb-8 dark:text-white">{{ 'contact.title' | translate }}</h1>
       <p class="text-xl text-gray-600 dark:text-gray-300 mb-12">
@@ -46,6 +46,11 @@ export class ContactComponent {
   sendEmail() {
     const subject = encodeURIComponent(`Contact from ${this.name}`);
     const body = encodeURIComponent(`Name: ${this.name}\nEmail: ${this.email}\n\nMessage:\n${this.message}`);
-    window.location.href = `mailto:schajjaoui@gmail.com?subject=${subject}&body=${body}`;
+    const url = `mailto:schajjaoui@gmail.com?subject=${subject}&body=${body}`;
+    this.openMailtoLink(url);
+  }
+
+  protected openMailtoLink(url: string) {
+    window.location.href = url;
   }
 }
