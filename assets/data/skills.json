@@ -1,0 +1,61 @@
+{
+  "skills": {
+    "bigData": {
+      "title": {
+        "fr": "Big Data",
+        "en": "Big Data"
+      },
+      "technologies": [
+        { "name": "Apache Spark", "level": 85 },
+        { "name": "Apache Airflow", "level": 85 },
+        { "name": "Apache Iceberg", "level": 80 },
+        { "name": "Nessie", "level": 75 },
+        { "name": "Apache Hadoop", "level": 70 },
+        { "name": "Apache Kafka", "level": 85 },
+        { "name": "Talend", "level": 70 }
+      ]
+    },
+    "dataStorage": {
+      "title": {
+        "fr": "Data Storage",
+        "en": "Data Storage"
+      },
+      "technologies": [
+        { "name": "MySQL", "level": 90 },
+        { "name": "PostgreSQL", "level": 85 },
+        { "name": "MongoDB", "level": 75 },
+        { "name": "Redis", "level": 80 },
+        { "name": "Iceberg", "level": 75 },
+        { "name": "MinIO", "level": 80 }
+      ]
+    },
+    "backend": {
+      "title": {
+        "fr": "Backend",
+        "en": "Backend"
+      },
+      "technologies": [
+        { "name": "Java", "level": 90 },
+        { "name": "Spring Boot", "level": 90 },
+        { "name": "Keycloak", "level": 75 },
+        { "name": "JMeter", "level": 80 },
+        { "name": "Postman", "level": 90 }
+      ]
+    },
+    "frontendDevops": {
+      "title": {
+        "fr": "Frontend & DevOps",
+        "en": "Frontend & DevOps"
+      },
+      "technologies": [
+        { "name": "Angular", "level": 85 },
+        { "name": "Docker", "level": 85 },
+        { "name": "Git", "level": 90 },
+        { "name": "Sublime Merge", "level": 85 },
+        { "name": "Grafana", "level": 75 },
+        { "name": "Prometheus", "level": 70 },
+        { "name": "Loki", "level": 70 }
+      ]
+    }
+  }
+}

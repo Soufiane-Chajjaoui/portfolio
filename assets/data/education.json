@@ -1,0 +1,126 @@
+{
+  "education": [
+    {
+      "id": "master-cs",
+      "degree": {
+        "fr": "Master en Informatique",
+        "ar": "ماجستير في علوم الحاسوب",
+        "en": "Master in Computer Science"
+      },
+      "status": {
+        "fr": "Diplômé",
+        "ar": "متخرج",
+        "en": "Graduated"
+      },
+      "specialization": {
+        "fr": "Développement Web et Technologies Modernes",
+        "ar": "تطوير الويب والتقنيات الحديثة",
+        "en": "Web Development and Modern Technologies"
+      },
+      "university": {
+        "name": {
+          "fr": "Université Mohammed V",
+          "ar": "جامعة محمد الخامس",
+          "en": "Mohammed V University"
+        },
+        "location": {
+          "fr": "Rabat, Maroc",
+          "ar": "الرباط، المغرب",
+          "en": "Rabat, Morocco"
+        },
+        "logo": "/images/uiz.png"
+      },
+      "period": "2022-2024",
+      "description": {
+        "fr": "Spécialisation approfondie en développement web moderne, architectures logicielles, et technologies émergentes. Projets pratiques en React, Node.js, et bases de données.",
+        "ar": "تخصص متعمق في تطوير الويب الحديث، هندسة البرمجيات، والتقنيات الناشئة. مشاريع عملية في React و Node.js وقواعد البيانات.",
+        "en": "In-depth specialization in modern web development, software architectures, and emerging technologies. Practical projects in React, Node.js, and databases."
+      },
+      "courses": {
+        "fr": [
+          "Développement Web Avancé",
+          "Architectures Logicielles",
+          "Bases de Données Avancées",
+          "Sécurité Informatique",
+          "Gestion de Projets IT"
+        ],
+        "ar": [
+          "تطوير الويب المتقدم",
+          "هندسة البرمجيات",
+          "قواعد البيانات المتقدمة",
+          "الأمن السيبراني",
+          "إدارة مشاريع تكنولوجيا المعلومات"
+        ],
+        "en": [
+          "Advanced Web Development",
+          "Software Architectures",
+          "Advanced Databases",
+          "Cybersecurity",
+          "IT Project Management"
+        ]
+      },
+      "grade": "Très Bien"
+    },
+    {
+      "id": "license-cs",
+      "degree": {
+        "fr": "Licence en Informatique",
+        "ar": "بكالوريوس في علوم الحاسوب",
+        "en": "Bachelor in Computer Science"
+      },
+      "status": {
+        "fr": "Diplômé",
+        "ar": "متخرج",
+        "en": "Graduated"
+      },
+      "specialization": {
+        "fr": "Informatique Générale",
+        "ar": "علوم الحاسوب العامة",
+        "en": "General Computer Science"
+      },
+      "university": {
+        "name": {
+          "fr": "Université Hassan II",
+          "ar": "جامعة الحسن الثاني",
+          "en": "Hassan II University"
+        },
+        "location": {
+          "fr": "Casablanca, Maroc",
+          "ar": "الدار البيضاء، المغرب",
+          "en": "Casablanca, Morocco"
+        },
+        "logo": "/images/uca.png"
+      },
+      "period": "2019-2022",
+      "description": {
+        "fr": "Formation complète en informatique couvrant les fondamentaux de la programmation, structures de données, algorithmes, et systèmes d'information.",
+        "ar": "تكوين شامل في علوم الحاسوب يغطي أساسيات البرمجة، هياكل البيانات، الخوارزميات، ونظم المعلومات.",
+        "en": "Comprehensive computer science education covering programming fundamentals, data structures, algorithms, and information systems."
+      },
+      "courses": {
+        "fr": [
+          "Programmation Orientée Objet",
+          "Structures de Données",
+          "Algorithmes et Complexité",
+          "Systèmes d'Exploitation",
+          "Réseaux Informatiques"
+        ],
+        "ar": [
+          "البرمجة الموجهة للكائنات",
+          "هياكل البيانات",
+          "الخوارزميات والتعقيد",
+          "أنظمة التشغيل",
+          "الشبكات الحاسوبية"
+        ],
+        "en": [
+          "Object-Oriented Programming",
+          "Data Structures",
+          "Algorithms and Complexity",
+          "Operating Systems",
+          "Computer Networks"
+        ]
+      },
+      "grade": "Bien"
+    }
+  ]
+}
