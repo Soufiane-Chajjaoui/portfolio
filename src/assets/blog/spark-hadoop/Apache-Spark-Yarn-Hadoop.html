@@ -1,0 +1,167 @@
+<article>
+  <h2>1. Concepts clés de Spark</h2>
+  
+  <h3>Architecture distribuée</h3>
+  <p>Spark fonctionne sur un cluster avec un <strong>Driver</strong> (orchestrateur) et des <strong>Executors</strong> (exécutent les tâches), permettant un traitement parallèle scalable.</p>
+  
+  <h3>RDD (Resilient Distributed Dataset)</h3>
+  <ul>
+    <li>Collection immuable et partitionnée, tolérante aux pannes grâce à la <strong>lignée</strong>.</li>
+    <li><strong>Transformations</strong> : map, filter</li>
+    <li><strong>Actions</strong> : collect, count</li>
+    <li><strong>Lignée</strong> : Graphe des transformations permettant de recalculer les données perdues en cas de panne.</li>
+  </ul>
+
+  <h3>Traitement en mémoire</h3>
+  <p>Stockage en RAM pour des performances rapides, avec <strong>spill to disk</strong> si la mémoire est insuffisante.</p>
+
+  <h3>Passes multiples</h3>
+  <p>Réutilisation d'un RDD pour plusieurs transformations/actions, optimisée par <code>cache()</code> ou <code>persist()</code>.</p>
+
+  <h3>Autres composants</h3>
+  <ul>
+    <li><strong>Spark SQL</strong> : Requêtes sur données structurées</li>
+    <li><strong>Streaming</strong> : Traitement en temps réel</li>
+    <li><strong>MLlib</strong> : Machine learning</li>
+    <li><strong>GraphX</strong> : Traitement de graphes</li>
+    <li><strong>Catalyst Optimizer</strong> : Optimisation des requêtes</li>
+  </ul>
+
+  <p><strong>Tolérance aux pannes</strong> : Assurée par la lignée et les recalculs automatiques.</p>
+  <p><strong>Intégration</strong> : Compatible avec HDFS, S3, Cassandra, Kafka, etc.</p>
+
+  <hr>
+
+  <h2>2. Gestion d'un pétabyte de données</h2>
+  
+  <p><strong>Défi</strong> : Un pétabyte dépasse la RAM d'un cluster. Spark gère cela via :</p>
+  <ul>
+    <li><strong>Partitionnement</strong> : Division en petites partitions traitées en parallèle</li>
+    <li><strong>Spill to disk</strong> : Déversement sur disque si mémoire pleine</li>
+    <li><strong>Cluster distribué</strong> : Nécessite plusieurs nœuds (ex. : 500 nœuds, 64 Go RAM chacun)</li>
+  </ul>
+
+  <h3>Optimisations</h3>
+  <ul>
+    <li>Formats comme <strong>Parquet</strong> pour compression et filtrage</li>
+    <li>Ajustement des partitions (<code>spark.sql.shuffle.partitions</code>)</li>
+    <li>Minimisation des <strong>shuffles</strong> (join, groupBy)</li>
+    <li>Cache (<code>persist(StorageLevel.MEMORY_AND_DISK)</code>), checkpointing</li>
+  </ul>
+
+  <p><strong>Infrastructure</strong> : Cluster multi-nœuds ou service cloud (AWS EMR, Google Dataproc).</p>
+
+  <hr>
+
+  <h2>3. Méthodes d'installation de Spark</h2>
+  
+  <ul>
+    <li><strong>Locale (Standalone)</strong> : Simple, pour tests sur une machine, non scalable</li>
+    <li><strong>Cluster manuel (Standalone)</strong> : Spark sur plusieurs nœuds avec gestion intégrée</li>
+    <li><strong>Gestionnaire de cluster</strong> :
+      <ul>
+        <li><strong>YARN</strong> : Intégration avec Hadoop, recommandé</li>
+        <li><strong>Kubernetes</strong> : Moderne, pour environnements cloud-native</li>
+        <li><strong>Mesos</strong> : Moins courant</li>
+      </ul>
+    </li>
+    <li><strong>Cloud géré</strong> : AWS EMR, Google Dataproc, Databricks</li>
+    <li><strong>Via pip</strong> : PySpark en local, limité sans cluster</li>
+  </ul>
+
+  <hr>
+
+  <h2>4. Vérification de la présence de Spark dans Hadoop</h2>
+  
+  <ul>
+    <li>Vérifier les binaires (<code>/usr/lib/spark</code>, <code>$SPARK_HOME</code>)</li>
+    <li>Tester les commandes (<code>spark-shell</code>, <code>pyspark</code>)</li>
+    <li>Vérifier YARN (<code>yarn application -list</code>) et interface web</li>
+    <li>Examiner configurations (<code>spark-env.sh</code>, <code>spark-defaults.conf</code>)</li>
+  </ul>
+
+  <hr>
+
+  <h2>5. Installation de Spark sur un serveur Hadoop</h2>
+  
+  <h3>Contexte</h3>
+  <ul>
+    <li>Hadoop installé (<code>HADOOP_HOME=/usr/local/hadoop</code>)</li>
+    <li>Java 11 (<code>JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64</code>)</li>
+  </ul>
+
+  <h3>Étapes d'installation</h3>
+  
+  <p><strong>1. Télécharger Spark :</strong></p>
+  <pre><code>wget https://dlcdn.apache.org/spark/spark-3.5.0/spark-3.5.0-bin-hadoop3.tgz
+sudo tar -xzf spark-3.5.0-bin-hadoop3.tgz -C /usr/local
+sudo mv /usr/local/spark-3.5.0-bin-hadoop3 /usr/local/spark</code></pre>
+
+  <p><strong>2. Configurer variables d'environnement</strong> (dans ~/.bashrc) :</p>
+  <pre><code>export SPARK_HOME=/usr/local/spark
+export PATH=$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin</code></pre>
+
+  <p><strong>3. Configurer spark-env.sh :</strong></p>
+  <pre><code>export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+export HADOOP_CONF_DIR=/usr/local/hadoop/etc/hadoop
+export SPARK_MASTER_HOST=IP_du_serveur
+export SPARK_LOCAL_IP=IP_du_serveur</code></pre>
+
+  <p><strong>4. Configurer spark-defaults.conf :</strong></p>
+  <pre><code>spark.master yarn
+spark.yarn.jars hdfs:///spark-jars/*
+spark.driver.memory 4g
+spark.executor.memory 4g</code></pre>
+
+  <p><strong>5. Copier JARs sur HDFS :</strong></p>
+  <pre><code>hdfs dfs -mkdir /spark-jars
+hdfs dfs -put $SPARK_HOME/jars/* /spark-jars/</code></pre>
+
+  <p><strong>6. Tester :</strong></p>
+  <pre><code>spark-shell --master yarn
+pyspark --master yarn</code></pre>
+
+  <hr>
+
+  <h2>6. Variables d'environnement complètes</h2>
+  
+  <pre><code># Java
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+export PATH=$JAVA_HOME/bin:$PATH
+
+# Hadoop
+export HADOOP_HOME=/usr/local/hadoop
+export HADOOP_CONF_DIR=/usr/local/hadoop/etc/hadoop
+export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
+
+# Spark
+export SPARK_HOME=/usr/local/spark
+export PATH=$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin</code></pre>
+
+  <hr>
+
+  <h2>7. Points clés pour un pétabyte</h2>
+  
+  <ul>
+    <li><strong>Cluster requis</strong> : 10+ nœuds (32 Go RAM, 8 cœurs, 1 To SSD par nœud)</li>
+    <li>Formats Parquet, partitionnement des données (ex. : par date)</li>
+    <li>Ajustement des partitions (<code>spark.sql.shuffle.partitions 10000</code>)</li>
+    <li>Cache (<code>persist(StorageLevel.MEMORY_AND_DISK)</code>), checkpointing</li>
+    <li>Minimisation des shuffles</li>
+    <li><strong>Cloud alternatif</strong> : AWS EMR, Google Dataproc</li>
+  </ul>
+
+  <hr>
+
+  <h2>8. Conclusion</h2>
+  
+  <ul>
+    <li>Configuration Hadoop fonctionnelle avec Java 11</li>
+    <li>Spark peut être installé sur le même serveur sans VM supplémentaire</li>
+    <li>Installation : Télécharger binaires, configurer variables, intégrer avec YARN, tester</li>
+    <li>Pour un pétabyte, un cluster multi-nœuds est requis</li>
+    <li>Concepts de RDD, lignée, passes multiples clarifiés</li>
+  </ul>
+
+  <p><strong>Prochaines étapes</strong> : Suivez les étapes d'installation fournies. Si vous visez un pétabyte ou rencontrez des problèmes (ressources, erreurs YARN), précisez pour une assistance ciblée.</p>
+</article>

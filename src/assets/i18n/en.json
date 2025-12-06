@@ -1,0 +1,91 @@
+{
+    "nav": {
+        "home": "Home",
+        "portfolio": "Portfolio",
+        "blog": "Blog",
+        "contact": "Contact",
+        "about": "About",
+        "skills": "Skills",
+        "cv": "CV"
+    },
+    "home": {
+        "greeting": "Hi, I'm Soufiane",
+        "role": "Master's Student in AI & Data",
+        "description": "Passionate about data engineering, I design scalable data pipelines and architectures.",
+        "viewWork": "View My Work",
+        "readBlog": "Read My Blog",
+        "downloadCV": "Download CV"
+    },
+    "education": {
+        "title": "Education",
+        "items": [
+            {
+                "degree": "Master in Data Analysis and Artificial Intelligence",
+                "year": "2024 - Present",
+                "university": "Faculty of Sciences Agadir",
+                "location": "Agadir, Morocco",
+                "specialization": "AI & Big Data",
+                "description": "Specialization in Machine Learning, Deep Learning, and Big Data architectures.",
+                "courses": ["Machine Learning", "Deep Learning", "Big Data", "Data Engineering"]
+            },
+            {
+                "degree": "Professional Bachelor in IS and Networks Engineering",
+                "year": "2023 - 2024",
+                "university": "EST Safi",
+                "location": "Safi, Morocco",
+                "specialization": "Information Systems and Networks",
+                "description": "Web application development and information systems management.",
+                "courses": ["Java", "Spring Boot", "Angular", "Networks"]
+            },
+            {
+                "degree": "DUT in Computer Engineering",
+                "year": "2021 - 2023",
+                "university": "EST Safi",
+                "location": "Safi, Morocco",
+                "specialization": "Computer Engineering",
+                "description": "Fundamentals in programming, databases, and web development.",
+                "courses": ["Java", "Databases", "Algorithms", "Web Development"]
+            }
+        ]
+    },
+    "about": {
+        "title": "About Me",
+        "location": "Location",
+        "languages": "Languages"
+    },
+    "skills": {
+        "title": "My Skills"
+    },
+    "portfolio": {
+        "title": "My Projects",
+        "noProjects": "No projects available yet.",
+        "viewProject": "View Project"
+    },
+    "blog": {
+        "title": "Blog",
+        "readArticle": "Read Article",
+        "noArticles": "No articles available yet.",
+        "comingSoon": "Blog Coming Soon",
+        "comingSoonDescription": "I'm currently working on exciting articles. Come back soon to discover my publications!"
+    },
+    "common": {
+        "viewMore": "View More",
+        "back": "Back"
+    },
+    "project": {
+        "type": "Mission Type",
+        "role": "Role",
+        "period": "Period",
+        "tech": "Technologies",
+        "about": "About the Project",
+        "tasks": "Tasks & Responsibilities"
+    },
+    "contact": {
+        "title": "Contact Me",
+        "description": "Feel free to reach out for any questions or collaboration opportunities.",
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "send": "Send"
+    }
+}

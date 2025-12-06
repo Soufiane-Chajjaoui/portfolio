@@ -1,0 +1,75 @@
+{
+  "personal": {
+    "name": {
+      "first": "Soufiane",
+      "last": "CHAJJAOUI",
+      "full": "Soufiane CHAJJAOUI"
+    },
+    "title": {
+      "fr": "Étudiant en Master IA & Data — Recherche stage PFE (4-6 mois)",
+      "ar": "طالب ماستر ذكاء اصطناعي وبيانات — أبحث عن تدريب",
+      "en": "Master's Student in AI & Data — Seeking PFE Internship (4-6 months)"
+    },
+    "description": {
+      "fr": "Passionné par l'ingénierie des données, je conçois des pipelines et architectures data scalables.",
+      "ar": "شغوف بهندسة البيانات، أصمم خطوط أنابيب وبنيات بيانات قابلة للتوسع.",
+      "en": "Passionate about data engineering, I design scalable data pipelines and architectures."
+    },
+    "contact": {
+      "email": "schajjaoui@gmail.com",
+      "phone": "+212 607 025 329",
+      "location": {
+        "fr": "Agadir, Maroc",
+        "ar": "أكادير، المغرب",
+        "en": "Agadir, Morocco"
+      },
+      "linkedin": "https://linkedin.com/in/soufiane-chajjaoui",
+      "github": "https://github.com/Soufiane-Chajjaoui",
+      "portfolio": "https://schajjaoui.dev"
+    },
+    "images": {
+      "profile": "assets/images/profile.png",
+      "cv": "/documents/cv-schajjaoui.pdf"
+    },
+    "languages": [
+      {
+        "name": "العربية",
+        "level": { "fr": "Natif", "en": "Native" },
+        "code": "ar"
+      },
+      {
+        "name": "Français",
+        "level": { "fr": "Courant", "en": "Fluent" },
+        "code": "fr"
+      },
+      {
+        "name": "English",
+        "level": { "fr": "Technique", "en": "Technical" },
+        "code": "en"
+      }
+    ],
+    "interests": {
+      "fr": [
+        "Développement Web",
+        "Intelligence Artificielle",
+        "Open Source",
+        "Photographie",
+        "Voyage"
+      ],
+      "ar": [
+        "تطوير الويب",
+        "الذكاء الاصطناعي",
+        "المصدر المفتوح",
+        "التصوير",
+        "السفر"
+      ],
+      "en": [
+        "Web Development",
+        "Artificial Intelligence",
+        "Open Source",
+        "Photography",
+        "Travel"
+      ]
+    }
+  }
+}

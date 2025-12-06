@@ -1,0 +1,23 @@
+[
+    {
+        "id": "1",
+        "slug": "apache-spark-yarn-hadoop",
+        "title": {
+            "en": "Apache Spark with YARN and Hadoop",
+            "fr": "Apache Spark avec YARN et Hadoop"
+        },
+        "description": {
+            "en": "Complete guide on Apache Spark architecture, RDD concepts, installation on Hadoop cluster with YARN, and optimizations for petabyte-scale data processing.",
+            "fr": "Guide complet sur l'architecture Apache Spark, les concepts RDD, l'installation sur un cluster Hadoop avec YARN, et les optimisations pour le traitement de données à l'échelle du pétabyte."
+        },
+        "date": "2024-12-01",
+        "tags": [
+            "Big Data",
+            "Apache Spark",
+            "Hadoop",
+            "YARN"
+        ],
+        "coverImage": "/assets/blog/spark-hadoop/Apache-Spark-Yarn-Hadoop.png",
+        "htmlFile": "spark-hadoop/Apache-Spark-Yarn-Hadoop.html"
+    }
+]

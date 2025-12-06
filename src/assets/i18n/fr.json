@@ -1,0 +1,91 @@
+{
+    "nav": {
+        "home": "Accueil",
+        "portfolio": "Portfolio",
+        "blog": "Blog",
+        "contact": "Contact",
+        "about": "À propos",
+        "skills": "Compétences",
+        "cv": "CV"
+    },
+    "home": {
+        "greeting": "Salut, je suis Soufiane",
+        "role": "Étudiant en Master IA & Data",
+        "description": "Passionné par l'ingénierie des données, je conçois des pipelines et architectures data scalables.",
+        "viewWork": "Voir mes projets",
+        "readBlog": "Lire mon blog",
+        "downloadCV": "Télécharger CV"
+    },
+    "education": {
+        "title": "Formation",
+        "items": [
+            {
+                "degree": "Master Analyse de Données et Intelligence Artificielle",
+                "year": "2024 - En cours",
+                "university": "Faculté des Sciences Agadir",
+                "location": "Agadir, Maroc",
+                "specialization": "IA & Big Data",
+                "description": "Spécialisation en Machine Learning, Deep Learning et architectures Big Data.",
+                "courses": ["Machine Learning", "Deep Learning", "Big Data", "Data Engineering"]
+            },
+            {
+                "degree": "Licence Professionnelle Ingénierie des SI et Réseaux",
+                "year": "2023 - 2024",
+                "university": "EST Safi",
+                "location": "Safi, Maroc",
+                "specialization": "Systèmes d'Information et Réseaux",
+                "description": "Développement d'applications web et gestion des systèmes d'information.",
+                "courses": ["Java", "Spring Boot", "Angular", "Réseaux"]
+            },
+            {
+                "degree": "DUT Génie Informatique",
+                "year": "2021 - 2023",
+                "university": "EST Safi",
+                "location": "Safi, Maroc",
+                "specialization": "Génie Informatique",
+                "description": "Fondamentaux en programmation, bases de données et développement web.",
+                "courses": ["Java", "Bases de données", "Algorithmes", "Développement Web"]
+            }
+        ]
+    },
+    "about": {
+        "title": "À propos de moi",
+        "location": "Localisation",
+        "languages": "Langues"
+    },
+    "skills": {
+        "title": "Mes Compétences"
+    },
+    "portfolio": {
+        "title": "Mes Projets",
+        "noProjects": "Aucun projet disponible pour le moment.",
+        "viewProject": "Voir le projet"
+    },
+    "blog": {
+        "title": "Blog",
+        "readArticle": "Lire l'article",
+        "noArticles": "Aucun article disponible pour le moment.",
+        "comingSoon": "Blog bientôt disponible",
+        "comingSoonDescription": "Je travaille actuellement sur des articles passionnants. Revenez bientôt pour découvrir mes publications !"
+    },
+    "common": {
+        "viewMore": "Voir plus",
+        "back": "Retour"
+    },
+    "project": {
+        "type": "Type de mission",
+        "role": "Rôle",
+        "period": "Période",
+        "tech": "Technologies",
+        "about": "À propos du projet",
+        "tasks": "Tâches & Responsabilités"
+    },
+    "contact": {
+        "title": "Me Contacter",
+        "description": "N'hésitez pas à me contacter pour toute question ou opportunité de collaboration.",
+        "name": "Nom",
+        "email": "Email",
+        "message": "Message",
+        "send": "Envoyer"
+    }
+}

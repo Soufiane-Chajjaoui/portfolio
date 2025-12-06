@@ -1,0 +1,341 @@
+{
+  "projects": [
+    {
+      "id": "bank-al-maghrib",
+      "slug": "bank-al-maghrib",
+      "company": {
+        "name": {
+          "fr": "Bank Al-Maghrib",
+          "en": "Bank Al-Maghrib"
+        },
+        "logo": "assets/images/bank/bank-al-maghrib-logo.png"
+      },
+      "title": {
+        "fr": "Centralisation de l'authentification et gestion dynamique des accès",
+        "en": "Authentication Centralization and Dynamic Access Management"
+      },
+      "type": {
+        "fr": "Stage de fin d'année",
+        "en": "End of Year Internship"
+      },
+      "role": {
+        "fr": "Développeur Java/Angular",
+        "en": "Java/Angular Developer"
+      },
+      "period": {
+        "fr": "Avril 2024 - Juin 2024",
+        "en": "April 2024 - June 2024"
+      },
+      "subject": {
+        "fr": "Centralisation de l'authentification et gestion dynamique des accès",
+        "en": "Authentication centralization and dynamic access management"
+      },
+      "description": {
+        "fr": "Mise en place d'une architecture d'authentification centralisée (Spring Security, JWT). Gestion dynamique des menus selon rôles et permissions. Participation aux cérémonies Scrum et revues de code.",
+        "en": "Implementation of a centralized authentication architecture (Spring Security, JWT). Dynamic menu management based on roles and permissions. Participation in Scrum ceremonies and code reviews."
+      },
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/images/bank/bank-copm.png",
+          "alt": {
+            "fr": "Interface COPM",
+            "en": "COPM Interface"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/bank/bank-arch-copm.png",
+          "alt": {
+            "fr": "Architecture COPM",
+            "en": "COPM Architecture"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/bank/bank-seq-copm.png",
+          "alt": {
+            "fr": "Diagramme de séquence COPM",
+            "en": "COPM Sequence Diagram"
+          }
+        }
+      ],
+      "technologies": [
+        "Java 21",
+        "Spring Boot 3",
+        "Spring Security 6",
+        "Spring Data JPA",
+        "Mockito",
+        "Angular 17",
+        "PostgreSQL",
+        "Git",
+        "SublimeMerge",
+        "Postman"
+      ],
+      "tasks": {
+        "fr": [
+          "Mise en place d'une architecture d'authentification centralisée (Spring Security, JWT)",
+          "Gestion dynamique des menus selon rôles et permissions",
+          "Participation aux cérémonies Scrum et revues de code"
+        ],
+        "en": [
+          "Implementation of a centralized authentication architecture (Spring Security, JWT)",
+          "Dynamic menu management based on roles and permissions",
+          "Participation in Scrum ceremonies and code reviews"
+        ]
+      },
+      "links": {
+        "github": null,
+        "demo": null,
+        "isPrivate": true
+      },
+      "duration": "3 mois",
+      "year": "2024"
+    },
+    {
+      "id": "mkadia-data",
+      "slug": "mkadia-data",
+      "company": {
+        "name": {
+          "fr": "Projet Académique - Master IA & Data",
+          "en": "Academic Project - Master AI & Data"
+        },
+        "logo": "assets/images/reco-mkadia/sys-reco-archi.png"
+      },
+      "title": {
+        "fr": "Mkadia — Architecture Data & Pipeline IA",
+        "en": "Mkadia — Data Architecture & AI Pipeline"
+      },
+      "type": {
+        "fr": "Projet Académique",
+        "en": "Academic Project"
+      },
+      "role": {
+        "fr": "Data Engineer",
+        "en": "Data Engineer"
+      },
+      "subject": {
+        "fr": "Pipeline de données end-to-end avec système de recommandation",
+        "en": "End-to-end data pipeline with recommendation system"
+      },
+      "description": {
+        "fr": "Pipeline end-to-end : ingestion Apache Kafka, traitement Apache Spark batch/streaming. Système de recommandation personnalisé + Related Items. Orchestration ETL avec Apache Airflow.",
+        "en": "End-to-end pipeline: Apache Kafka ingestion, Apache Spark batch/streaming processing. Personalized recommendation system + Related Items. ETL orchestration with Apache Airflow."
+      },
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/images/reco-mkadia/sys-reco-archi.png",
+          "alt": {
+            "fr": "MKADIA Data Pipeline",
+            "en": "MKADIA Data Pipeline"
+          }
+        }
+      ],
+      "technologies": [
+        "Apache Kafka",
+        "Apache Spark",
+        "Apache Iceberg",
+        "Nessie",
+        "MinIO",
+        "Apache Airflow",
+        "Redis",
+        "PostgreSQL",
+        "Docker",
+        "Grafana"
+      ],
+      "tasks": {
+        "fr": [
+          "Pipeline end-to-end : ingestion Apache Kafka, traitement Apache Spark batch/streaming",
+          "Système de recommandation : recommandations personnalisées + Related Items",
+          "Orchestration ETL avec Apache Airflow, stockage PostgreSQL et Data Lake MinIO Apache Iceberg",
+          "Déploiement, tests et monitoring sur environnement Dockerisé"
+        ],
+        "en": [
+          "End-to-end pipeline: Apache Kafka ingestion, Apache Spark batch/streaming processing",
+          "Recommendation system: personalized recommendations + Related Items",
+          "ETL orchestration with Apache Airflow, PostgreSQL storage and MinIO Apache Iceberg Data Lake",
+          "Deployment, testing and monitoring on Dockerized environment"
+        ]
+      },
+      "links": {
+        "github": "https://github.com/Soufiane-Chajjaoui/mkadia-reco",
+        "demo": null
+      },
+      "period": {
+        "fr": "2025",
+        "en": "2025"
+      },
+      "duration": "En cours",
+      "year": "2025"
+    },
+    {
+      "id": "mkadia-app",
+      "slug": "mkadia-app",
+      "company": {
+        "name": {
+          "fr": "Projet Personnel",
+          "en": "Personal Project"
+        },
+        "logo": "assets/images/mkadia-logo.png"
+      },
+      "title": {
+        "fr": "Mkadia — E-commerce Web, Mobile & Backend",
+        "en": "Mkadia — E-commerce Web, Mobile & Backend"
+      },
+      "type": {
+        "fr": "Projet Personnel",
+        "en": "Personal Project"
+      },
+      "role": {
+        "fr": "Développeur Full Stack",
+        "en": "Full Stack Developer"
+      },
+      "subject": {
+        "fr": "Application complète e-commerce avec backend Spring Boot",
+        "en": "Complete e-commerce application with Spring Boot backend"
+      },
+      "description": {
+        "fr": "Application complète : gestion produits, utilisateurs, commandes, codes promo. Backend Spring Boot : JWT, Refresh Token, 2FA (Twilio), APIs REST.",
+        "en": "Complete application: products, users, orders, promo codes management. Spring Boot backend: JWT, Refresh Token, 2FA (Twilio), REST APIs."
+      },
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/images/mkadia/3.png",
+          "alt": {
+            "fr": "MKADIA App",
+            "en": "MKADIA App"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/mkadia/4.png",
+          "alt": {
+            "fr": "MKADIA Mobile",
+            "en": "MKADIA Mobile"
+          }
+        }
+      ],
+      "technologies": [
+        "Angular 17",
+        "React Native",
+        "Spring Boot 3",
+        "PostgreSQL",
+        "Twilio",
+        "Docker",
+        "JMeter",
+        "Sublime Merge"
+      ],
+      "tasks": {
+        "fr": [
+          "Application complète : gestion produits, utilisateurs, commandes, codes promo",
+          "Backend Spring Boot : JWT, Refresh Token, 2FA (Twilio), APIs REST",
+          "Tests de charge avec JMeter"
+        ],
+        "en": [
+          "Complete application: products, users, orders, promo codes management",
+          "Spring Boot backend: JWT, Refresh Token, 2FA (Twilio), REST APIs",
+          "Load testing with JMeter"
+        ]
+      },
+      "links": {
+        "github": "https://github.com/Soufiane-Chajjaoui/mkadia-mobile",
+        "demo": null
+      },
+      "period": {
+        "fr": "2025",
+        "en": "2025"
+      },
+      "duration": "En cours",
+      "year": "2025"
+    },
+    {
+      "id": "cabinet-medical",
+      "slug": "cabinet-medical",
+      "company": {
+        "name": {
+          "fr": "Cabinet Médical — Safi",
+          "en": "Medical Office — Safi"
+        },
+        "logo": "assets/images/logo_tabibi.png"
+      },
+      "title": {
+        "fr": "Application web de gestion du cabinet médical",
+        "en": "Medical Office Management Web Application"
+      },
+      "type": {
+        "fr": "Stage de fin d'année",
+        "en": "End of Year Internship"
+      },
+      "role": {
+        "fr": "Développeur Full Stack",
+        "en": "Full Stack Developer"
+      },
+      "subject": {
+        "fr": "Application de gestion du cabinet médical",
+        "en": "Medical office management application"
+      },
+      "description": {
+        "fr": "Développement d'une application de gestion (patients, rendez-vous, dossiers). Backend Express.js + Sequelize (MySQL). Temps réel via Socket.io.",
+        "en": "Development of a management application (patients, appointments, records). Express.js + Sequelize (MySQL) backend. Real-time via Socket.io."
+      },
+      "media": [
+        {
+          "type": "image",
+          "src": "assets/images/tabibi/1.png",
+          "alt": {
+            "fr": "Cabinet Médical Aperçu 1",
+            "en": "Medical Office Preview 1"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/tabibi/2.png",
+          "alt": {
+            "fr": "Cabinet Médical Aperçu 2",
+            "en": "Medical Office Preview 2"
+          }
+        },
+        {
+          "type": "image",
+          "src": "assets/images/tabibi/3.png",
+          "alt": {
+            "fr": "Cabinet Médical Aperçu 3",
+            "en": "Medical Office Preview 3"
+          }
+        }
+      ],
+      "technologies": [
+        "Node.js",
+        "Express.js",
+        "Sequelize",
+        "EJS",
+        "Socket.io",
+        "MySQL"
+      ],
+      "tasks": {
+        "fr": [
+          "Développement d'une application de gestion (patients, rendez-vous, dossiers)",
+          "Backend Express.js + Sequelize (MySQL)",
+          "Temps réel via Socket.io"
+        ],
+        "en": [
+          "Development of a management application (patients, appointments, records)",
+          "Express.js + Sequelize (MySQL) backend",
+          "Real-time via Socket.io"
+        ]
+      },
+      "links": {
+        "github": "https://github.com/Soufiane-Chajjaoui/Tabibi",
+        "demo": "https://youtu.be/ybC7HR_BIr4"
+      },
+      "period": {
+        "fr": "Avril 2023 - Juin 2023",
+        "en": "April 2023 - June 2023"
+      },
+      "duration": "3 mois",
+      "year": "2023"
+    }
+  ]
+}
