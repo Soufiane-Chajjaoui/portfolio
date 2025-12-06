@@ -10,7 +10,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:portfolio": "node dist/portfolio/server/server.mjs",
-    "analyze": "ng build --stats-json && webpack-bundle-analyzer dist/portfolio/browser/stats.json"
+    "analyze": "ng build --stats-json && webpack-bundle-analyzer dist/portfolio/browser/stats.json",
+    "deploy": "ng build --configuration production --base-href=/portfolio/ && npx angular-cli-ghpages --dir=dist/portfolio/browser"
   },
   "private": true,
   "dependencies": {
@@ -42,6 +43,7 @@
     "@types/highlight.js": "^10.1.0",
     "@types/jasmine": "~5.1.0",
     "@types/node": "^18.18.0",
+    "angular-cli-ghpages": "^2.0.3",
     "autoprefixer": "^10.4.22",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
