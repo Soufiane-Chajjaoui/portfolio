@@ -13,7 +13,7 @@ import { CommonModule } from '@angular/common';
     <nav class="fixed w-full top-0 z-50 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 transition-colors duration-300">
       <div class="container mx-auto px-4 h-16 flex items-center justify-between">
         <a routerLink="/" class="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-cyan-500 bg-clip-text text-transparent">
-          < Soufiane Chajjaoui />
+          &lt; Soufiane Chajjaoui /&gt;
         </a>
         
         <div class="hidden md:flex items-center space-x-8">
