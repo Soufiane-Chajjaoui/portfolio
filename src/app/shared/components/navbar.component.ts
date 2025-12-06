@@ -17,11 +17,12 @@ import { CommonModule } from '@angular/common';
         </a>
         
         <div class="hidden md:flex items-center space-x-8">
+        <div class="hidden md:flex items-center space-x-8">
           <a routerLink="/" routerLinkActive="text-indigo-600 dark:text-indigo-400" [routerLinkActiveOptions]="{exact: true}" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors font-medium">
             {{ 'nav.home' | translate }}
           </a>
-          <a routerLink="/about" routerLinkActive="text-indigo-600 dark:text-indigo-400" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors font-medium">
-            {{ 'nav.about' | translate }}
+          <a routerLink="/projects" routerLinkActive="text-indigo-600 dark:text-indigo-400" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors font-medium">
+            {{ 'nav.projects' | translate }}
           </a>
           <a routerLink="/blog" routerLinkActive="text-indigo-600 dark:text-indigo-400" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors font-medium">
             {{ 'nav.blog' | translate }}

@@ -4,14 +4,18 @@ import { DataService } from '../../core/services/data.service';
 import { CardComponent } from '../../shared/components/card.component';
 import { TranslatePipe } from '../../shared/pipes/translate.pipe';
 import { signal } from '@angular/core';
+import { RouterLink } from '@angular/router'; // Added RouterLink import
 
 @Component({
-  selector: 'app-portfolio-list',
+  selector: 'app-project-list', // Renamed selector
   standalone: true,
-  imports: [CommonModule, CardComponent, TranslatePipe],
+  imports: [CommonModule, RouterLink, TranslatePipe, CardComponent], // Added RouterLink
   template: `
-    <div class="container mx-auto px-4 py-12">
-      <h1 class="text-4xl font-bold mb-12 text-center dark:text-white">{{ 'portfolio.title' | translate }}</h1>
+    <div class="min-h-screen pt-24 pb-16 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+      <div class="container mx-auto px-4">
+        <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-12 text-center" data-aos="fade-down">
+          {{ 'projects.title' | translate }}
+        </h1>
       
       <!-- Loading State -->
       <div *ngIf="loading()" class="flex justify-center py-12">
@@ -40,12 +44,13 @@ import { signal } from '@angular/core';
 
       <!-- Empty State -->
       <div *ngIf="!loading() && !error() && projects().length === 0" class="text-center py-12">
-        <p class="text-xl text-gray-600 dark:text-gray-400">{{ 'portfolio.noProjects' | translate }}</p>
-      </div>
+          <p class="text-gray-600 dark:text-gray-400 text-lg mb-8">
+            {{ 'projects.noProjects' | translate }}
+          </p></div>
     </div>
   `
 })
-export class PortfolioListComponent implements OnInit {
+export class ProjectListComponent implements OnInit {
   private dataService = inject(DataService);
   projects = signal<any[]>([]);
   loading = signal<boolean>(true);

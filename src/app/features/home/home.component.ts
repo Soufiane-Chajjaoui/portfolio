@@ -31,7 +31,7 @@ import { DataService } from '../../core/services/data.service';
             </p>
             
             <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start pt-4 flex-wrap">
-              <a routerLink="/" class="px-8 py-4 bg-indigo-600 hover:bg-indigo-700 text-white rounded-full font-bold text-lg transition-all shadow-lg shadow-indigo-600/20 hover:shadow-indigo-600/40 transform hover:-translate-y-1">
+              <a routerLink="/projects" class="px-8 py-4 bg-indigo-600 hover:bg-indigo-700 text-white rounded-full font-bold text-lg transition-all shadow-lg shadow-indigo-600/20 hover:shadow-indigo-600/40 transform hover:-translate-y-1">
                 {{ 'home.viewWork' | translate }}
               </a>
               <a routerLink="/blog" class="px-8 py-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 hover:border-indigo-500 dark:hover:border-indigo-400 text-gray-900 dark:text-white rounded-full font-bold text-lg transition-all hover:shadow-lg transform hover:-translate-y-1">

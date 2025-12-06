@@ -1,7 +1,7 @@
 {
     "nav": {
         "home": "Accueil",
-        "portfolio": "Portfolio",
+        "projects": "Projets",
         "blog": "Blog",
         "contact": "Contact",
         "about": "À propos",
@@ -74,7 +74,7 @@
     "skills": {
         "title": "Mes Compétences"
     },
-    "portfolio": {
+    "projects": {
         "title": "Mes Projets",
         "noProjects": "Aucun projet disponible pour le moment.",
         "viewProject": "Voir le projet"
