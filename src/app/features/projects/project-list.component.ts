@@ -1,15 +1,12 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DataService } from '../../core/services/data.service';
-import { CardComponent } from '../../shared/components/card.component';
-import { TranslatePipe } from '../../shared/pipes/translate.pipe';
-import { signal } from '@angular/core';
-import { RouterLink } from '@angular/router'; // Added RouterLink import
+import { SkeletonCardComponent } from '../../shared/components/skeleton-card.component';
 
 @Component({
-  selector: 'app-project-list', // Renamed selector
+  selector: 'app-project-list',
   standalone: true,
-  imports: [CommonModule, RouterLink, TranslatePipe, CardComponent], // Added RouterLink
+  imports: [CommonModule, RouterLink, TranslatePipe, CardComponent, SkeletonCardComponent],
   template: `
     <div class="min-h-screen pt-24 pb-16 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
       <div class="container mx-auto px-4">
@@ -17,9 +14,9 @@ import { RouterLink } from '@angular/router'; // Added RouterLink import
           {{ 'projects.title' | translate }}
         </h1>
       
-      <!-- Loading State -->
-      <div *ngIf="loading()" class="flex justify-center py-12">
-        <div class="animate-spin rounded-full h-12 w-12 border-4 border-indigo-500 border-t-transparent"></div>
+      <!-- Loading State (Skeleton) -->
+      <div *ngIf="loading()" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <app-skeleton-card *ngFor="let i of [1,2,3,4,5,6]" aspectRatio="square"></app-skeleton-card>
       </div>
 
       <!-- Error State -->
