@@ -11,7 +11,7 @@
     "test": "ng test",
     "serve:ssr:portfolio": "node dist/portfolio/server/server.mjs",
     "analyze": "ng build --stats-json && webpack-bundle-analyzer dist/portfolio/browser/stats.json",
-    "deploy": "ng build --configuration production --base-href=/portfolio/ && npx angular-cli-ghpages --dir=dist/portfolio/browser"
+    "deploy": "ng build --configuration production --base-href=/ && npx angular-cli-ghpages --dir=dist/portfolio/browser"
   },
   "private": true,
   "dependencies": {
