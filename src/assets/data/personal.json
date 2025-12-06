@@ -25,7 +25,8 @@
       },
       "linkedin": "https://linkedin.com/in/soufiane-chajjaoui",
       "github": "https://github.com/Soufiane-Chajjaoui",
-      "portfolio": "https://schajjaoui.dev"
+      "portfolio": "https://schajjaoui.dev",
+      "medium": "https://medium.com/@schajjaoui"
     },
     "images": {
       "profile": "assets/images/profile.png",
@@ -34,17 +35,26 @@
     "languages": [
       {
         "name": "العربية",
-        "level": { "fr": "Natif", "en": "Native" },
+        "level": {
+          "fr": "Natif",
+          "en": "Native"
+        },
         "code": "ar"
       },
       {
         "name": "Français",
-        "level": { "fr": "Courant", "en": "Fluent" },
+        "level": {
+          "fr": "Courant",
+          "en": "Fluent"
+        },
         "code": "fr"
       },
       {
         "name": "English",
-        "level": { "fr": "Technique", "en": "Technical" },
+        "level": {
+          "fr": "Technique",
+          "en": "Technical"
+        },
         "code": "en"
       }
     ],

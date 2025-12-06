@@ -119,6 +119,10 @@ import { DataService } from '../../core/services/data.service';
                  class="px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-900 transition-colors">
                 GitHub
               </a>
+              <a [href]="personal().contact.medium" target="_blank"
+                 class="px-4 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition-colors">
+                Medium
+              </a>
             </div>
           </div>
         </div>
