@@ -12,7 +12,7 @@ import { RouterLink } from '@angular/router';
   imports: [CommonModule, TranslatePipe, RouterLink],
   template: `
     <div class="container mx-auto px-4 py-12 max-w-4xl" *ngIf="project(); else loading">
-      <a routerLink="/portfolio" class="inline-flex items-center gap-2 text-indigo-600 dark:text-indigo-400 mb-8 hover:underline">
+      <a routerLink="/projects" class="inline-flex items-center gap-2 text-indigo-600 dark:text-indigo-400 mb-8 hover:underline">
         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
         </svg>

@@ -35,8 +35,8 @@ import { RouterLink } from '@angular/router'; // Added RouterLink import
           [title]="project.title | translate"
           [description]="project.subject | translate"
           [tags]="project.technologies"
-          [link]="['/portfolio', project.slug]"
-          [linkText]="'portfolio.viewProject' | translate"
+          [link]="['/projects', project.slug]"
+          [linkText]="'projects.viewProject' | translate"
           [image]="project.media.length > 0 ? project.media[0].src : ''"
           aspectRatio="square"
         />
