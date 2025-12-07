@@ -3,19 +3,19 @@ import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { DataService } from '../../core/services/data.service';
 import { TranslatePipe } from '../../shared/pipes/translate.pipe';
 
+import { SkeletonAboutComponent } from '../../shared/components/skeleton-about.component';
+
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [CommonModule, TranslatePipe],
+  imports: [CommonModule, TranslatePipe, SkeletonAboutComponent],
   template: `
     <div class="container-custom py-16">
       <div class="max-w-4xl mx-auto">
         <h1 class="text-4xl font-bold text-center mb-12 dark:text-white">{{ 'about.title' | translate }}</h1>
 
         <!-- Loading state -->
-        <div *ngIf="loading()" class="text-center py-10">
-          <div class="animate-spin w-8 h-8 border-4 border-primary-500 border-t-transparent rounded-full mx-auto"></div>
-        </div>
+        <app-skeleton-about *ngIf="loading()"></app-skeleton-about>
 
         <div *ngIf="personal()" class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>

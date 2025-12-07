@@ -3,6 +3,11 @@ export interface LocalizedString {
     fr: string;
 }
 
+export interface LocalizedStringArray {
+    en: string[];
+    fr: string[];
+}
+
 export interface Project {
     id: string;
     slug: string;
@@ -22,7 +27,7 @@ export interface Project {
         name: LocalizedString;
         logo: string;
     };
-    tasks?: LocalizedString;
+    tasks?: LocalizedStringArray;
     links?: {
         github?: string | null;
         demo?: string | null;

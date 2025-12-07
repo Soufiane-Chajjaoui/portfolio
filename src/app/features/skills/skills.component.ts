@@ -3,19 +3,19 @@ import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { DataService } from '../../core/services/data.service';
 import { TranslatePipe } from '../../shared/pipes/translate.pipe';
 
+import { SkeletonSkillsComponent } from '../../shared/components/skeleton-skills.component';
+
 @Component({
   selector: 'app-skills',
   standalone: true,
-  imports: [CommonModule, TranslatePipe],
+  imports: [CommonModule, TranslatePipe, SkeletonSkillsComponent],
   template: `
     <div class="container-custom py-16">
       <div class="max-w-6xl mx-auto">
         <h1 class="text-4xl font-bold text-center mb-12 dark:text-white">{{ 'skills.title' | translate }}</h1>
 
         <!-- Loading state -->
-        <div *ngIf="loading()" class="text-center py-10">
-          <div class="animate-spin w-8 h-8 border-4 border-primary-500 border-t-transparent rounded-full mx-auto"></div>
-        </div>
+        <app-skeleton-skills *ngIf="loading()"></app-skeleton-skills>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" *ngIf="skillsData()">
           <!-- Frontend -->

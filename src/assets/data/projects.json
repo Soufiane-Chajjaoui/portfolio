@@ -100,7 +100,7 @@
           "fr": "Projet Académique - Master IA & Data",
           "en": "Academic Project - Master AI & Data"
         },
-        "logo": "assets/images/reco-mkadia/sys-reco-archi.png"
+        "logo": "assets/images/reco-mkadia/logo.png"
       },
       "title": {
         "fr": "Mkadia — Architecture Data & Pipeline IA",
@@ -177,7 +177,7 @@
           "fr": "Projet Personnel",
           "en": "Personal Project"
         },
-        "logo": "assets/images/mkadia-logo.png"
+        "logo": "assets/images/mkadia/logo.png"
       },
       "title": {
         "fr": "Mkadia — E-commerce Web, Mobile & Backend",
@@ -279,7 +279,7 @@
           "fr": "Cabinet Médical — Safi",
           "en": "Medical Office — Safi"
         },
-        "logo": "assets/images/logo_tabibi.png"
+        "logo": "assets/images/tabibi/logo.png"
       },
       "title": {
         "fr": "Application web de gestion du cabinet médical",

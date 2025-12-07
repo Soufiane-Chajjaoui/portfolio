@@ -1,12 +1,14 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject, OnInit, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DataService } from '../../core/services/data.service';
 import { SkeletonCardComponent } from '../../shared/components/skeleton-card.component';
+import { TranslatePipe } from '../../shared/pipes/translate.pipe';
+import { CardComponent } from '../../shared/components/card.component';
 
 @Component({
   selector: 'app-project-list',
   standalone: true,
-  imports: [CommonModule, RouterLink, TranslatePipe, CardComponent, SkeletonCardComponent],
+  imports: [CommonModule, TranslatePipe, CardComponent, SkeletonCardComponent],
   template: `
     <div class="min-h-screen pt-24 pb-16 bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
       <div class="container mx-auto px-4">
